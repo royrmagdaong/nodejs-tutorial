@@ -1,0 +1,6 @@
+var fs = require('fs');
+
+// read a file synchronously
+var readMe = fs.readFileSync('app.js', 'utf8');
+
+fs.writeFileSync('writeMe.txt',readMe);
